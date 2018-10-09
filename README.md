@@ -13,6 +13,10 @@ As a user
 So I can have an account
 I would like to be able to sign up
 
+As a user
+So I can list or rent a property under my name
+I want to be able to log in
+
 # Any signed-up user can list a new space.
 As a host
 So I can rent out my property
