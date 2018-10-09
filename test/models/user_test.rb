@@ -15,4 +15,23 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
   
+  test "blank email address should not be valid" do
+    @user.email = ""
+    assert_not @user.valid?
+  end
+
+  test "email is in email format" do
+    @user.email = "hi@aol.co.uk"
+    assert @user.valid?
+  end
+
+  test "email in non standard format is not valid" do
+    @user.email = "hello"
+    assert_not @user.valid?
+  end
+
+  test "blank password field should not be valid" do
+    @user.password = " "
+    assert_not @user.valid?
+  end
 end
