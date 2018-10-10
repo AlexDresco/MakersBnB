@@ -13,18 +13,20 @@
 ActiveRecord::Schema.define(version: 2018_10_09_105301) do
 
   create_table "listings", force: :cascade do |t|
-    t.string "name"
+    t.string "property_name"
     t.string "description"
     t.integer "price"
-    t.date "date"
+    t.date "start_date"
+    t.date "end_date"
     t.date "booked_dates"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "requests", force: :cascade do |t|
     t.string "property_name"
-    t.date "request_date"
+    t.date "requested_date"
     t.string "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -37,4 +39,5 @@ ActiveRecord::Schema.define(version: 2018_10_09_105301) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 end

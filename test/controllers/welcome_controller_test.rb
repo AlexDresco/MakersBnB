@@ -14,6 +14,6 @@ class WelcomeControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     click_on 'Sign up'
     assert_select "Please sign up below:"
-    page.assert_current_path('/welcome/signup')
+    page.assert_current_path('/users/new')
   end
 end

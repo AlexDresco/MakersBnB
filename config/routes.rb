@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :users
+  get 'welcome/index', to: 'welcome#index'  
+  get 'users/new', to: 'users#new' # implicit route
+  post 'users', to: 'users#create', name: :users_path # 'named routes' default path form helper would use 
+  # resources :users
+  # get 'welcome/signup', to: 'welcome#signup' -- replaced by users/new , removed corresponding view and controller
   get 'welcome/login' 
-  get 'welcome/signup', to: 'welcome#signup'
-  get 'welcome/index', to: 'welcome#index'
-
 
 
   root 'welcome#index'
