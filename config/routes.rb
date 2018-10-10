@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   # resources :users
   # get 'welcome/signup', to: 'welcome#signup' -- replaced by users/new , removed corresponding view and controller
   get 'welcome/login' 
+  get 'listings/new', to: 'listings#new'
+  post 'listings', to: 'listings#create', name: :listings_path
 
 
-  root 'welcome#index'
-
+ 
+ root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
