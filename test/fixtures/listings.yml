@@ -2,16 +2,16 @@
 
 one:
   id: 
-  name: MyString
+  property_name: MyString
   description: MyString
   price: 1
-  date: 2018-10-09
+  start_date: 2018-10-09
   booked_dates: 2018-10-09
 
 two:
   id: 
-  name: MyString
+  property_name: MyString
   description: MyString
   price: 1
-  date: 2018-10-09
+  start_date: 2018-10-09
   booked_dates: 2018-10-09

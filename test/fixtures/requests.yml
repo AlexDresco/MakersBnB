@@ -2,10 +2,10 @@
 
 one:
   property_name: MyString
-  request_date: 2018-10-09
+  requested_date: 2018-10-09
   user_name: MyString
 
 two:
   property_name: MyString
-  request_date: 2018-10-09
+  requested_date: 2018-10-09
   user_name: MyString
