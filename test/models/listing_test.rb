@@ -6,7 +6,7 @@ class ListingTest < ActiveSupport::TestCase
   end
 
 
-  test "should be an instance of a user" do
+  test "should be an instance of a listing" do
     assert @listing.valid?
   end
 
