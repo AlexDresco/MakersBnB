@@ -4,5 +4,5 @@ class Listing < ApplicationRecord
   validates(:description, presence: true)
   validates(:price, presence: true)
   validates(:start_date, presence: true)
-
+  validates_numericality_of :price, on: :create
 end
