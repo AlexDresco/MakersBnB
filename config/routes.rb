@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'welcome/login' 
   get 'listings/new', to: 'listings#new'
   post 'listings', to: 'listings#create', name: :listings_path
+  get 'listings', to: 'listings#index'
 
 
  
