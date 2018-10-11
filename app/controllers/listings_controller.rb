@@ -8,6 +8,10 @@ class ListingsController < ApplicationController
     @listing.errors.blank? ? redirect_to('/listings/new') : render(:new) 
   end
 
+  def index
+    @listings = Listing.all
+  end
+
   private
 
   def user_params
