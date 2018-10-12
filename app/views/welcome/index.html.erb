@@ -3,3 +3,18 @@
 <a href="/welcome/login">Log in</a>
 <a href="/users/new">Sign up</a>
 <a href="/listings">View all properties</a>
+<!-- <form action="/listings/filtered" method="post">
+  <input type="date" name="">
+  <input type="submit" value="Find">
+</form> -->
+
+<%= form_tag("/listings/filtered", method: "post") do %>
+<p>
+  <%= label_tag :chosen_date %><br>
+  <%= date_field_tag :chosen_date %>
+</p>
+<p>
+  <%= submit_tag("Search")%>
+</p>
+
+<% end %>

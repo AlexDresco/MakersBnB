@@ -1,0 +1,13 @@
+<h1>View all properties<h1>
+
+<ul class='listings'>
+  <% @sorted.each do |listing| %>
+  <div>
+    <p>Property name: <%= listing.property_name %></p>
+    <p>Information: <%= listing.description %></p>
+    <p>Price per night: <%= listing.price%>£</p>
+    <p>Available dates: <%= listing.start_date%></p>
+    <p>-----------------------------------------</p>
+  </div>
+  <% end %>
+</ul> 
